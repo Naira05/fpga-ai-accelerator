@@ -37,6 +37,9 @@ vsim.wlf
 *.sim/
 *.srcs/utils_1/
 
+# --- IDE / History ---
+.history/
+
 # --- Operating System ---
 .DS_Store
 Thumbs.db
