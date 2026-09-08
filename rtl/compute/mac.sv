@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module mac_unit #(
+module mac #(
     parameter int PIXEL_W  = 8,
     parameter int WEIGHT_W = 8,
     parameter int PROD_W   = PIXEL_W + WEIGHT_W,
@@ -19,24 +19,28 @@ module mac_unit #(
 
     logic signed [PROD_W-1:0] product;
 
-    logic signed [ACC_W-1:0] product_ext;
+    multiplier #(
+        .PIXEL_W  (PIXEL_W),
+        .WEIGHT_W (WEIGHT_W),
+        .PROD_W   (PROD_W)
+    ) u_multiplier (
+        .clk     (clk),
+        .rst_n   (rst_n),
+        .pixel   (pixel),
+        .weight  (weight),
+        .product (product)
+    );
 
-    always_comb begin
-        product = $signed({1'b0, pixel}) * weight;
-
-        product_ext = {{(ACC_W-PROD_W){product[PROD_W-1]}}, product};
-    end
-
-    always_ff @(posedge clk or negedge rst_n) begin
-        if (!rst_n) begin
-            acc <= '0;
-        end
-        else if (clear) begin
-            acc <= '0;
-        end
-        else if (enable) begin
-            acc <= acc + product_ext;
-        end
-    end
+    accumulator #(
+        .PROD_W (PROD_W),
+        .ACC_W  (ACC_W)
+    ) u_accumulator (
+        .clk     (clk),
+        .rst_n   (rst_n),
+        .enable  (enable),
+        .clear   (clear),
+        .value   (product),
+        .acc     (acc)
+    );
 
 endmodule

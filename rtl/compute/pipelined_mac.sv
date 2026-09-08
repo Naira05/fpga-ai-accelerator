@@ -18,12 +18,12 @@ module pipelined_mac #(
 
     logic signed [PROD_W-1:0] product [0:N-1];
 
-    mac_array #(
+    mac_engine #(
         .N        (N),
         .PIXEL_W  (PIXEL_W),
         .WEIGHT_W (WEIGHT_W),
         .PROD_W   (PROD_W)
-    ) u_mac_array (
+    ) u_mac_engine (
         .clk     (clk),
         .rst_n   (rst_n),
         .pixel   (pixel),

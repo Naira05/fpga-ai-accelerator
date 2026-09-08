@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module mac_array #(
+module mac_engine #(
     parameter int N        = 9,
     parameter int PIXEL_W  = 8,
     parameter int WEIGHT_W = 8,
