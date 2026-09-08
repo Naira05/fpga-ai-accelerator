@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # --- Project Specific ---
 test_vectors/
 *.hex
@@ -42,4 +43,47 @@ vsim.wlf
 
 # --- Operating System ---
 .DS_Store
+=======
+# --- Project Specific ---
+test_vectors/
+*.hex
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+venv/
+.env
+
+# --- FPGA / HDL Tools (Vivado, Quartus, ModelSim) ---
+# Logs and journal files
+*.log
+*.jou
+*.pb
+*.str
+*.fmt
+*.bak
+
+# Simulation directories
+work/
+msim/
+xsim.dir/
+obj_dir/
+vsim.wlf
+*.vstf
+*.db
+
+# Synthesis/Implementation artifacts
+.Xil/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.srcs/utils_1/
+
+# --- Operating System ---
+.DS_Store
+>>>>>>> Stashed changes
 Thumbs.db
