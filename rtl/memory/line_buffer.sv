@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 module line_buffer #(
     parameter DATA_WIDTH  = 8,
     parameter IMAGE_WIDTH = 32

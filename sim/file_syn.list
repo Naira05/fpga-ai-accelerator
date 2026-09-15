@@ -15,3 +15,4 @@
 ../rtl/compute/mac_engine.sv
 ../rtl/control/controller.sv
 ../rtl/top/cnn_accelerator.sv
+../rtl/top/result_fifo.sv

@@ -24,6 +24,7 @@
 // Controller & Top-Level
 ../rtl/control/controller.sv
 ../rtl/top/cnn_accelerator.sv
+../rtl/top/result_fifo.sv
 
 // Testbench
 ../tb/tb_cnn_accelerator.sv
