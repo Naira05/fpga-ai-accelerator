@@ -1,15 +1,21 @@
-# ============================================================
-# FPGA AI Accelerator - .gitignore
-# Keep source code, constraints, scripts, and documentation.
-# Ignore generated/build/simulation artifacts.
-# ============================================================
+# ================================
+# Vivado
+# ================================
 
+*.jou
+*.log
+*.str
+*.rpt
+*.rpx
+*.dcp
+*.bit
+*.bin
+*.ltx
+*.mcs
+*.prm
+*.xsa
+*.hdf
 
-# ------------------------------------------------------------
-# Vivado generated files
-# ------------------------------------------------------------
-
-# Vivado project generated directories
 *.runs/
 *.cache/
 *.gen/
@@ -18,48 +24,18 @@
 *.ip_user_files/
 *.srcs/
 
-# Vivado temporary/generated files
-*.jou
-*.log
-*.str
-*.pb
-*.xmsgs
-*.xml
-*.rpt
-*.rpx
-
-# Vivado checkpoints
-*.dcp
-
-# Vivado generated simulation files
+# Vivado simulation
 *.wdb
 *.wcfg
-*.xsim
-*.xsim.dir/
+*.xmsgs
 xsim.dir/
 
-# Vivado generated output/programming files
-*.bit
-*.bin
-*.ltx
-*.mcs
-*.prm
-*.pdi
-*.xsa
-*.hdf
 
-
-# ------------------------------------------------------------
+# ================================
 # Questa / ModelSim
-# ------------------------------------------------------------
+# ================================
 
-# Simulation libraries
-work/
-questa/
-modelsim/
-modelsim.ini
-
-# Simulation databases / waveforms
+*.mti
 *.wlf
 *.vcd
 *.fst
@@ -67,115 +43,65 @@ modelsim.ini
 *.ucdb
 *.vst
 
-# Questa generated files
+work/
 transcript
-*.mpf
-*.mti
-
-# Coverage
-coverage/
+modelsim.ini
 
 
-# ------------------------------------------------------------
-# SAIF / switching activity
-# ------------------------------------------------------------
+# ================================
+# Switching activity
+# ================================
 
 *.saif
 
 
-# ------------------------------------------------------------
+# ================================
 # Python
-# ------------------------------------------------------------
+# ================================
 
 __pycache__/
-*.py[cod]
-
-# Virtual environments
+*.pyc
 .venv/
 venv/
 env/
-ENV/
-
-# Python tooling
 .pytest_cache/
-.mypy_cache/
-.ruff_cache/
-
-# Jupyter
 .ipynb_checkpoints/
 
 
-# ------------------------------------------------------------
-# Generated simulation / test results
-# ------------------------------------------------------------
+# ================================
+# Generated output
+# ================================
 
-simulation_output/
-sim_output/
-test_output/
-generated/
 build/
 dist/
 output/
+outputs/
 results/
-tmp/
-temp/
-
-# Generated waveform/data files
-*.vcd
-*.fst
-*.fsdb
-
-
-# ------------------------------------------------------------
-# Reports and logs
-# ------------------------------------------------------------
-
 reports/
 logs/
+tmp/
+temp/
+simulation_output/
+test_output/
 
-*.out
-*.trace
 
+# ================================
+# OS / Editor
+# ================================
 
-# ------------------------------------------------------------
-# OS files
-# ------------------------------------------------------------
-
-# Windows
+.DS_Store
 Thumbs.db
 Desktop.ini
-$RECYCLE.BIN/
 
-# Linux
-.directory
-.Trash-*
-.nfs*
-
-# macOS
-.DS_Store
-
-
-# ------------------------------------------------------------
-# Editors
-# ------------------------------------------------------------
-
-# VS Code
 .vscode/
-
-# Vim
 *.swp
 *.swo
 *~
 
-# Backup files
-*.bak
-*.backup
-*.orig
 
-
-# ------------------------------------------------------------
+# ================================
 # Large generated FPGA files
-# ------------------------------------------------------------
+# ================================
 
 *.edf
 *.edn
@@ -185,21 +111,3 @@ $RECYCLE.BIN/
 *.srp
 *.twr
 *.twx
-
-
-# ============================================================
-# DO NOT IGNORE
-#
-# The following important source files remain tracked:
-#
-# *.sv       SystemVerilog RTL / testbenches
-# *.v        Verilog
-# *.vh       Verilog headers
-# *.xdc      FPGA constraints
-# *.py       Python scripts / golden model
-# *.md       Documentation
-# *.txt      Documentation / configuration
-# *.json     Configuration/data
-# *.xpr      Vivado project
-#
-# ============================================================
