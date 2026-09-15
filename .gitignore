@@ -1,11 +1,9 @@
 # ================================
-# Vivado
+# Vivado Project Files
 # ================================
-
 *.jou
 *.log
 *.str
-*.rpt
 *.rpx
 *.dcp
 *.bit
@@ -16,93 +14,201 @@
 *.xsa
 *.hdf
 
+# Auto-generated implementation & synthesis runs
 *.runs/
 *.cache/
 *.gen/
 *.hw/
 *.sim/
 *.ip_user_files/
-*.srcs/
 
-# Vivado simulation
+# Vivado simulation artifacts
 *.wdb
 *.wcfg
 *.xmsgs
 xsim.dir/
 
-
 # ================================
-# Questa / ModelSim
+# ModelSim / QuestaSim
 # ================================
-
+*.cr.mti
+*.mpf_new
 *.mti
 *.wlf
-*.vcd
 *.fst
 *.fsdb
 *.ucdb
 *.vst
-
 work/
 transcript
 modelsim.ini
 
-
 # ================================
-# Switching activity
+# Waveforms & Switching Activity (VCD / SAIF)
 # ================================
-
+*.vcd
+*.vcd.gz
 *.saif
 
+# ================================
+# Reports & Deliverables Management
+# ================================
+# Ignore root directory generated report clutter:
+*.rpt
+
+# Allow committing formal competition reports inside a dedicated reports folder:
+!reports/
+!reports/**
 
 # ================================
-# Python
+# Build & Output Directories
 # ================================
-
-__pycache__/
-*.pyc
-.venv/
-venv/
-env/
-.pytest_cache/
-.ipynb_checkpoints/
-
-
-# ================================
-# Generated output
-# ================================
-
 build/
 dist/
 output/
 outputs/
 results/
-reports/
 logs/
 tmp/
 temp/
 simulation_output/
 test_output/
 
+# ================================
+# Python Golden Model & Tools
+# ================================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
 
 # ================================
-# OS / Editor
+# OS & Editor Artifacts
 # ================================
-
 .DS_Store
 Thumbs.db
 Desktop.ini
-
 .vscode/
 *.swp
 *.swo
 *~
 
+# ================================
+# Legacy / Netlist Intermediates
+# ================================
+*.edf
+*.edn
+*.ngc
+*.ngd
+*.syr
+*.srp
+*.twr
+*.twx# ================================
+# Vivado Project Files
+# ================================
+*.jou
+*.log
+*.str
+*.rpx
+*.dcp
+*.bit
+*.bin
+*.ltx
+*.mcs
+*.prm
+*.xsa
+*.hdf
+
+# Auto-generated implementation & synthesis runs
+*.runs/
+*.cache/
+*.gen/
+*.hw/
+*.sim/
+*.ip_user_files/
+
+# Vivado simulation artifacts
+*.wdb
+*.wcfg
+*.xmsgs
+xsim.dir/
 
 # ================================
-# Large generated FPGA files
+# ModelSim / QuestaSim
 # ================================
+*.cr.mti
+*.mpf_new
+*.mti
+*.wlf
+*.fst
+*.fsdb
+*.ucdb
+*.vst
+work/
+transcript
+modelsim.ini
 
+# ================================
+# Waveforms & Switching Activity (VCD / SAIF)
+# ================================
+*.vcd
+*.vcd.gz
+*.saif
+
+# ================================
+# Reports & Deliverables Management
+# ================================
+# Ignore root directory generated report clutter:
+*.rpt
+
+# Allow committing formal competition reports inside a dedicated reports folder:
+!reports/
+!reports/**
+
+# ================================
+# Build & Output Directories
+# ================================
+build/
+dist/
+output/
+outputs/
+results/
+logs/
+tmp/
+temp/
+simulation_output/
+test_output/
+
+# ================================
+# Python Golden Model & Tools
+# ================================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ================================
+# OS & Editor Artifacts
+# ================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+*.swp
+*.swo
+*~
+
+# ================================
+# Legacy / Netlist Intermediates
+# ================================
 *.edf
 *.edn
 *.ngc
