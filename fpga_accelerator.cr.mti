@@ -38,6 +38,13 @@ QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 Top level modules:
 	multiplier
 
+} {} {}} E:/My_Projects/fpga-ai-accelerator/tb/tb_cnn_accelerator.sv {1 {vlog -work work -vopt -sv -stats=none E:/My_Projects/fpga-ai-accelerator/tb/tb_cnn_accelerator.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module tb_cnn_accelerator
+
+Top level modules:
+	tb_cnn_accelerator
+
 } {} {}} E:/My_Projects/fpga-ai-accelerator/rtl/top/cnn_accelerator.sv {2 {vlog -work work -vopt -sv -stats=none E:/My_Projects/fpga-ai-accelerator/rtl/top/cnn_accelerator.sv
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 -- Compiling module cnn_accelerator
