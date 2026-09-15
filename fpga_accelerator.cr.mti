@@ -1,0 +1,102 @@
+E:/My_Projects/fpga-ai-accelerator/rtl/compute/pipelined_mac.sv {2 {vlog -work work -vopt -sv -stats=none E:/My_Projects/fpga-ai-accelerator/rtl/compute/pipelined_mac.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module pipelined_mac
+** Warning: E:/My_Projects/fpga-ai-accelerator/rtl/compute/pipelined_mac.sv(13): (vlog-13314) Defaulting port 'pixel' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: E:/My_Projects/fpga-ai-accelerator/rtl/compute/pipelined_mac.sv(14): (vlog-13314) Defaulting port 'weight' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	pipelined_mac
+
+} {} {}} E:/My_Projects/fpga-ai-accelerator/rtl/memory/line_buffer.sv {1 {vlog -work work -vopt -sv -stats=none E:/My_Projects/fpga-ai-accelerator/rtl/memory/line_buffer.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module line_buffer
+
+Top level modules:
+	line_buffer
+
+} {} {}} E:/My_Projects/fpga-ai-accelerator/rtl/compute/mac_engine.sv {2 {vlog -work work -vopt -sv -stats=none E:/My_Projects/fpga-ai-accelerator/rtl/compute/mac_engine.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module mac_engine
+** Warning: E:/My_Projects/fpga-ai-accelerator/rtl/compute/mac_engine.sv(12): (vlog-13314) Defaulting port 'pixel' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: E:/My_Projects/fpga-ai-accelerator/rtl/compute/mac_engine.sv(13): (vlog-13314) Defaulting port 'weight' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	mac_engine
+
+} {} {}} E:/My_Projects/fpga-ai-accelerator/rtl/compute/adder_tree.sv {2 {vlog -work work -vopt -sv -stats=none E:/My_Projects/fpga-ai-accelerator/rtl/compute/adder_tree.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module adder_tree
+** Warning: E:/My_Projects/fpga-ai-accelerator/rtl/compute/adder_tree.sv(31): (vlog-13314) Defaulting port 'product' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	adder_tree
+
+} {} {}} E:/My_Projects/fpga-ai-accelerator/rtl/compute/multiplier.sv {1 {vlog -work work -vopt -sv -stats=none E:/My_Projects/fpga-ai-accelerator/rtl/compute/multiplier.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module multiplier
+
+Top level modules:
+	multiplier
+
+} {} {}} E:/My_Projects/fpga-ai-accelerator/rtl/top/cnn_accelerator.sv {2 {vlog -work work -vopt -sv -stats=none E:/My_Projects/fpga-ai-accelerator/rtl/top/cnn_accelerator.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cnn_accelerator
+** Warning: E:/My_Projects/fpga-ai-accelerator/rtl/top/cnn_accelerator.sv(18): (vlog-13314) Defaulting port 'kernel_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module result_fifo
+
+Top level modules:
+	cnn_accelerator
+
+} {} {}} E:/My_Projects/fpga-ai-accelerator/rtl/compute/mac.sv {1 {vlog -work work -vopt -sv -stats=none E:/My_Projects/fpga-ai-accelerator/rtl/compute/mac.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module mac
+
+Top level modules:
+	mac
+
+} {} {}} E:/My_Projects/fpga-ai-accelerator/rtl/compute/saturate.sv {1 {vlog -work work -vopt -sv -stats=none E:/My_Projects/fpga-ai-accelerator/rtl/compute/saturate.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module saturate
+
+Top level modules:
+	saturate
+
+} {} {}} E:/My_Projects/fpga-ai-accelerator/rtl/memory/LB_chain.sv {1 {vlog -work work -vopt -sv -stats=none E:/My_Projects/fpga-ai-accelerator/rtl/memory/LB_chain.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module LB_chain
+
+Top level modules:
+	LB_chain
+
+} {} {}} E:/My_Projects/fpga-ai-accelerator/rtl/activation/relu.sv {1 {vlog -work work -vopt -sv -stats=none E:/My_Projects/fpga-ai-accelerator/rtl/activation/relu.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module relu
+
+Top level modules:
+	relu
+
+} {} {}} E:/My_Projects/fpga-ai-accelerator/rtl/compute/tb_pipelined_mac.sv {1 {vlog -work work -vopt -sv -stats=none E:/My_Projects/fpga-ai-accelerator/rtl/compute/tb_pipelined_mac.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+
+} {} {}} E:/My_Projects/fpga-ai-accelerator/rtl/control/controller.sv {1 {vlog -work work -vopt -sv -stats=none E:/My_Projects/fpga-ai-accelerator/rtl/control/controller.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module controller
+
+Top level modules:
+	controller
+
+} {} {}} E:/My_Projects/fpga-ai-accelerator/rtl/compute/accumulator.sv {1 {vlog -work work -vopt -sv -stats=none E:/My_Projects/fpga-ai-accelerator/rtl/compute/accumulator.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module accumulator
+
+Top level modules:
+	accumulator
+
+} {} {}} E:/My_Projects/fpga-ai-accelerator/rtl/window/window_generator.sv {1 {vlog -work work -vopt -sv -stats=none E:/My_Projects/fpga-ai-accelerator/rtl/window/window_generator.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module window_generator
+
+Top level modules:
+	window_generator
+
+} {} {}}
