@@ -1,0 +1,29 @@
+// ============================================================================
+// Simulation File List - RTL & Testbench
+// ============================================================================
+
+// Activation Modules
+../rtl/activation/relu.sv
+
+// Memory & Buffering
+../rtl/memory/line_buffer.sv
+../rtl/memory/LB_chain.sv
+
+// Window Generation
+../rtl/window/window_generator.sv
+
+// Compute Units
+../rtl/compute/multiplier.sv
+../rtl/compute/accumulator.sv
+../rtl/compute/adder_tree.sv
+../rtl/compute/mac.sv
+../rtl/compute/pipelined_mac.sv
+../rtl/compute/saturate.sv
+../rtl/compute/mac_engine.sv
+
+// Controller & Top-Level
+../rtl/control/controller.sv
+../rtl/top/cnn_accelerator.sv
+
+// Testbench
+../tb/tb_cnn_accelerator.sv

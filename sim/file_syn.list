@@ -1,0 +1,17 @@
+// ============================================================================
+// Synthesis File List - RTL Only
+// ============================================================================
+
+../rtl/activation/relu.sv
+../rtl/memory/line_buffer.sv
+../rtl/memory/LB_chain.sv
+../rtl/window/window_generator.sv
+../rtl/compute/multiplier.sv
+../rtl/compute/accumulator.sv
+../rtl/compute/adder_tree.sv
+../rtl/compute/mac.sv
+../rtl/compute/pipelined_mac.sv
+../rtl/compute/saturate.sv
+../rtl/compute/mac_engine.sv
+../rtl/control/controller.sv
+../rtl/top/cnn_accelerator.sv
