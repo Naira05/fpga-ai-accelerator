@@ -9,7 +9,7 @@
 
 # 100 MHz clock
 # Period = 10 ns
-create_clock -name clk -period 8.000 [get_ports clk]
+create_clock -name clk -period  6.154 [get_ports clk]
 
 ############################################################
 # Reset
