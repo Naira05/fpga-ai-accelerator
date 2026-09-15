@@ -1,0 +1,6 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+E:/My_Projects/fpga-ai-accelerator/project_1/project_1.sim/sim_1/synth/func/xsim/tb_cnn_accelerator_func_synth.v,1789439485,verilog,,,,LB_chain;adder_tree;cnn_accelerator;controller;glbl;line_buffer;line_buffer_0;mac_engine;multiplier;multiplier_1;multiplier_2;multiplier_3;multiplier_4;multiplier_5;multiplier_6;multiplier_7;multiplier_8;pipelined_mac;result_fifo;window_generator,,,,,,,,
+E:/My_Projects/fpga-ai-accelerator/tb/tb_cnn_accelerator.sv,1789433121,systemVerilog,,,,tb_cnn_accelerator,,,,,,,,

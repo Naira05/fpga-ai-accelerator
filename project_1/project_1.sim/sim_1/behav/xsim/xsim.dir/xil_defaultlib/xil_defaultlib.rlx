@@ -1,0 +1,17 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+E:/My_Projects/fpga-ai-accelerator/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+E:/My_Projects/fpga-ai-accelerator/rtl/activation/relu.sv,1789415242,systemVerilog,,E:/My_Projects/fpga-ai-accelerator/rtl/compute/saturate.sv,,relu,,,,,,,,
+E:/My_Projects/fpga-ai-accelerator/rtl/compute/adder_tree.sv,1788875603,systemVerilog,,E:/My_Projects/fpga-ai-accelerator/rtl/top/cnn_accelerator.sv,,adder_tree,,,,,,,,
+E:/My_Projects/fpga-ai-accelerator/rtl/compute/mac_engine.sv,1788875603,systemVerilog,,E:/My_Projects/fpga-ai-accelerator/rtl/compute/multiplier.sv,,mac_engine,,,,,,,,
+E:/My_Projects/fpga-ai-accelerator/rtl/compute/multiplier.sv,1788875603,systemVerilog,,E:/My_Projects/fpga-ai-accelerator/rtl/compute/pipelined_mac.sv,,multiplier,,,,,,,,
+E:/My_Projects/fpga-ai-accelerator/rtl/compute/pipelined_mac.sv,1788875603,systemVerilog,,E:/My_Projects/fpga-ai-accelerator/rtl/activation/relu.sv,,pipelined_mac,,,,,,,,
+E:/My_Projects/fpga-ai-accelerator/rtl/compute/saturate.sv,1789415252,systemVerilog,,E:/My_Projects/fpga-ai-accelerator/rtl/window/window_generator.sv,,saturate,,,,,,,,
+E:/My_Projects/fpga-ai-accelerator/rtl/control/controller.sv,1789415226,systemVerilog,,E:/My_Projects/fpga-ai-accelerator/rtl/memory/line_buffer.sv,,controller,,,,,,,,
+E:/My_Projects/fpga-ai-accelerator/rtl/memory/LB_chain.sv,1789008034,systemVerilog,,E:/My_Projects/fpga-ai-accelerator/rtl/compute/adder_tree.sv,,LB_chain,,,,,,,,
+E:/My_Projects/fpga-ai-accelerator/rtl/memory/line_buffer.sv,1789008034,systemVerilog,,E:/My_Projects/fpga-ai-accelerator/rtl/compute/mac_engine.sv,,line_buffer,,,,,,,,
+E:/My_Projects/fpga-ai-accelerator/rtl/top/cnn_accelerator.sv,1789432876,systemVerilog,,E:/My_Projects/fpga-ai-accelerator/rtl/control/controller.sv,,cnn_accelerator;result_fifo,,,,,,,,
+E:/My_Projects/fpga-ai-accelerator/rtl/window/window_generator.sv,1789432441,systemVerilog,,E:/My_Projects/fpga-ai-accelerator/tb/tb_cnn_accelerator.sv,,window_generator,,,,,,,,
+E:/My_Projects/fpga-ai-accelerator/tb/tb_cnn_accelerator.sv,1789433121,systemVerilog,,,,tb_cnn_accelerator,,,,,,,,

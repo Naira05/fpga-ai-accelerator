@@ -1,89 +1,284 @@
-<<<<<<< Updated upstream
-# --- Project Specific ---
-test_vectors/
-*.hex
+# ============================================================
 
-# --- Python ---
-__pycache__/
-*.py[cod]
-*$py.class
-.pytest_cache/
-venv/
-.env
+# FPGA AI Accelerator - Git Ignore
 
-# --- FPGA / HDL Tools (Vivado, Quartus, ModelSim) ---
-# Logs and journal files
+# ============================================================
+
+# ------------------------------------------------------------
+
+# Vivado generated files
+
+# ------------------------------------------------------------
+
+# Vivado project generated data
+
+*.jou
+*.log
+*.str
+*.pb
+*.wdb
+*.wcfg
+*.xmsgs
+
+# Vivado generated directories
+
+.cache/
+.hw/
+.ip_user_files/
+.sim/
+.gen/
+.xsim/
+webtalk/
+webtalk_*.xml
+
+# Vivado runs / generated implementation data
+
+project_1/project_1.runs/
+*.runs/
+
+# Vivado generated reports
+
+*.rpt
+*.rpx
+
+# Vivado generated checkpoints
+
+*.dcp
+
+# Generated bitstreams and programming files
+
+*.bit
+*.bin
+*.mcs
+*.prm
+*.ltx
+
+# Hardware handoff / generated output
+
+*.hdf
+*.xsa
+
+# Vivado temporary files
+
+*.tmp
+*.backup
+*.orig
+
+# ------------------------------------------------------------
+
+# Questa / ModelSim generated files
+
+# ------------------------------------------------------------
+
+# Simulation databases
+
+*.wlf
+*.vcd
+*.ucdb
+*.vst
+*.vsim
+
+# Questa/ModelSim working library
+
+work/
+transcript
+modelsim.ini
+
+# Questa generated files
+
 *.log
 *.jou
-*.pb
-*.str
-*.fmt
-*.bak
+*.mpf
+*.mti
 
-# Simulation directories
-work/
-msim/
-xsim.dir/
-obj_dir/
-vsim.wlf
-*.vstf
-*.db
+# Simulation coverage
 
-# Synthesis/Implementation artifacts
-.Xil/
-*.cache/
-*.hw/
-*.ip_user_files/
-*.runs/
-*.sim/
-*.srcs/utils_1/
+coverage/
+*.cov
+*.ucdb
 
-# --- IDE / History ---
-.history/
+# SAIF switching activity
 
-# --- Operating System ---
-.DS_Store
-=======
-# --- Project Specific ---
-test_vectors/
-*.hex
+*.saif
 
-# --- Python ---
-__pycache__/
+# ------------------------------------------------------------
+
+# Cocotb / Python simulation artifacts
+
+# ------------------------------------------------------------
+
+**pycache**/
 *.py[cod]
 *$py.class
+
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+
+.venv/
 venv/
-.env
+env/
+ENV/
 
-# --- FPGA / HDL Tools (Vivado, Quartus, ModelSim) ---
-# Logs and journal files
-*.log
-*.jou
-*.pb
-*.str
-*.fmt
-*.bak
+# Jupyter
 
-# Simulation directories
-work/
-msim/
-xsim.dir/
-obj_dir/
-vsim.wlf
-*.vstf
-*.db
+.ipynb_checkpoints/
 
-# Synthesis/Implementation artifacts
-.Xil/
-*.cache/
-*.hw/
-*.ip_user_files/
-*.runs/
-*.sim/
-*.srcs/utils_1/
+# Python generated files
 
-# --- Operating System ---
-.DS_Store
->>>>>>> Stashed changes
+*.pkl
+*.pickle
+
+# ------------------------------------------------------------
+
+# OS / Editor files
+
+# ------------------------------------------------------------
+
+# Windows
+
 Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# Linux
+
+.directory
+.Trash-*
+.nfs*
+
+# macOS
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code
+
+.vscode/
+*.code-workspace
+
+# Visual Studio
+
+.vs/
+
+# Temporary editor files
+
+*.swp
+*.swo
+*~
+*.bak
+
+# ------------------------------------------------------------
+
+# Build / generated directories
+
+# ------------------------------------------------------------
+
+build/
+dist/
+out/
+output/
+generated/
+tmp/
+temp/
+
+# ------------------------------------------------------------
+
+# FPGA generated programming / synthesis artifacts
+
+# ------------------------------------------------------------
+
+# Generated netlists
+
+*.edf
+*.edn
+*.ngc
+*.ngd
+
+# Generated simulation netlists
+
+*_sim.v
+*_sim.sv
+*_sim.vhd
+
+# Generated synthesis files
+
+*.syr
+*.srp
+
+# Generated timing files
+
+*.twr
+*.twx
+
+# Generated constraints
+
+*_timing.xdc
+*_generated.xdc
+
+# ------------------------------------------------------------
+
+# Large generated datasets / waveforms
+
+# ------------------------------------------------------------
+
+*.csv
+*.vcd
+*.fst
+*.fsdb
+
+# Ignore generated test images/data
+
+test_output/
+simulation_output/
+results/
+
+# ------------------------------------------------------------
+
+# Logs / reports generated locally
+
+# ------------------------------------------------------------
+
+logs/
+reports/
+results/
+*.out
+*.trace
+
+# ------------------------------------------------------------
+
+# Keep important project files
+
+# ------------------------------------------------------------
+
+# IMPORTANT:
+
+# Do NOT ignore the following:
+
+#
+
+# *.sv
+
+# *.v
+
+# *.vh
+
+# *.xdc
+
+# *.py
+
+# *.md
+
+# *.txt
+
+# *.json
+
+#
+
+# These contain source code, constraints, scripts, and documentation.
+
+# ============================================================
